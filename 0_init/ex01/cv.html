@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CV de John Doe</title>
+
+	<!-- head pour les bordures (solid) et la fusion (collapse) -->
+	<style>
+		table {
+			border-collapse: collapse;
+			width: 50%;
+			margin-top: 20px;
+		}
+
+		table,
+		th,
+		td {
+			border: 2px solid black;
+			padding: 8px;
+			text-align: left;
+		}
+	</style>
+</head>
+
+<body>
+
+	<!-- Un titre avec la balise h1 -->
+	<h1>Curriculum Vitae</h1>
+
+	<h2>Informations Personnelles</h2>
+	<p>
+		<strong>Nom :</strong> Doe<br>
+		<strong>Prénom :</strong> John
+	</p>
+
+	<h2>Compétences</h2>
+	<!-- Une liste avec la balise ul et des li -->
+	<ul>
+		<li>C/C++</li>
+		<li>Python</li>
+		<li>Bases de données SQL</li>
+		<li>Développement Web (HTML, CSS, JavaScript)</li>
+		<li>Administration système Linux</li>
+	</ul>
+
+	<h2>Parcours professionnel et académique</h2>
+	<!-- Une liste avec la balise ol et des li -->
+	<ol>
+		<li>2024 - 2026 : Formation Développeur Full-Stack (École 42)</li>
+		<li>2020 - 2023 : Licence Informatique (Université de Paris)</li>
+		<li>2019 : Baccalauréat Scientifique</li>
+	</ol>
+
+	<h2>Détails des Expériences</h2>
+	<!-- Un tableau avec table, th, tr et td -->
+	<table>
+		<tr>
+			<th>Année</th>
+			<th>Entreprise</th>
+			<th>Poste</th>
+		</tr>
+		<tr>
+			<td>2025</td>
+			<td>BlaBlaCorp</td>
+			<td>Stagiaire Développeur</td>
+		</tr>
+		<tr>
+			<td>2024</td>
+			<td>Test Studio</td>
+			<!-- Cellule en bas à droite avec bordure #424242 via attribut style -->
+			<td style="border-color: #424242;">Développeur Junior</td>
+		</tr>
+	</table>
+
+</body>
+
+</html>
