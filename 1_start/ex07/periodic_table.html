@@ -1,0 +1,719 @@
+
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <title>Tableau Périodique</title>
+            <style>
+                table {
+                    border-collapse: collapse;
+                    width: 100%;
+                }
+                td {
+                    border: 1px solid #999;
+                    padding: 4px;
+                    width: 5.5%;
+                    vertical-align: top;
+                    text-align: center;
+                    font-family: sans-serif;
+                }
+                .empty {
+                    border: none;
+                }
+                .number {
+                    font-size: 0.65em;
+                    text-align: left;
+                    color: #555;
+                    margin: 0;
+                }
+                .symbol {
+                    font-size: 1.6em;
+                    font-weight: bold;
+                    margin: 2px 0;
+                }
+                .name {
+                    font-size: 0.6em;
+                    margin: 0;
+                }
+                .molar {
+                    font-size: 0.6em;
+                    color: #444;
+                    margin: 0;
+                }
+            </style>
+        </head>
+        <body>
+            <table>
+                <tr>
+    
+        <td>
+            <p class="number">1</p>
+            <p class="symbol">H</p>
+            <h4 class="name">Hydrogen</h4>
+            <p class="molar">1.00794</p>
+        </td>
+                    <td class="empty"></td>
+            <td class="empty"></td>
+            <td class="empty"></td>
+            <td class="empty"></td>
+            <td class="empty"></td>
+            <td class="empty"></td>
+            <td class="empty"></td>
+            <td class="empty"></td>
+            <td class="empty"></td>
+            <td class="empty"></td>
+            <td class="empty"></td>
+            <td class="empty"></td>
+            <td class="empty"></td>
+            <td class="empty"></td>
+            <td class="empty"></td>
+            <td class="empty"></td>
+
+        <td>
+            <p class="number">2</p>
+            <p class="symbol">He</p>
+            <h4 class="name">Helium</h4>
+            <p class="molar">4.002602</p>
+        </td>
+                </tr>
+        <tr>
+
+        <td>
+            <p class="number">3</p>
+            <p class="symbol">Li</p>
+            <h4 class="name">Lithium</h4>
+            <p class="molar">6.941</p>
+        </td>
+        
+        <td>
+            <p class="number">4</p>
+            <p class="symbol">Be</p>
+            <h4 class="name">Beryllium</h4>
+            <p class="molar">9.012182</p>
+        </td>
+                    <td class="empty"></td>
+            <td class="empty"></td>
+            <td class="empty"></td>
+            <td class="empty"></td>
+            <td class="empty"></td>
+            <td class="empty"></td>
+            <td class="empty"></td>
+            <td class="empty"></td>
+            <td class="empty"></td>
+            <td class="empty"></td>
+
+        <td>
+            <p class="number">5</p>
+            <p class="symbol">B</p>
+            <h4 class="name">Boron</h4>
+            <p class="molar">10.811</p>
+        </td>
+        
+        <td>
+            <p class="number">6</p>
+            <p class="symbol">C</p>
+            <h4 class="name">Carbon</h4>
+            <p class="molar">12.0107</p>
+        </td>
+        
+        <td>
+            <p class="number">7</p>
+            <p class="symbol">N</p>
+            <h4 class="name">Nitrogen</h4>
+            <p class="molar">14.0067</p>
+        </td>
+        
+        <td>
+            <p class="number">8</p>
+            <p class="symbol">O</p>
+            <h4 class="name">Oxygen</h4>
+            <p class="molar">15.9994</p>
+        </td>
+        
+        <td>
+            <p class="number">9</p>
+            <p class="symbol">F</p>
+            <h4 class="name">Fluorine</h4>
+            <p class="molar">18.998404</p>
+        </td>
+        
+        <td>
+            <p class="number">10</p>
+            <p class="symbol">Ne</p>
+            <h4 class="name">Neon</h4>
+            <p class="molar">20.1797</p>
+        </td>
+                </tr>
+        <tr>
+
+        <td>
+            <p class="number">11</p>
+            <p class="symbol">Na</p>
+            <h4 class="name">Sodium</h4>
+            <p class="molar">22.989769</p>
+        </td>
+        
+        <td>
+            <p class="number">12</p>
+            <p class="symbol">Mg</p>
+            <h4 class="name">Magnesium</h4>
+            <p class="molar">24.305</p>
+        </td>
+                    <td class="empty"></td>
+            <td class="empty"></td>
+            <td class="empty"></td>
+            <td class="empty"></td>
+            <td class="empty"></td>
+            <td class="empty"></td>
+            <td class="empty"></td>
+            <td class="empty"></td>
+            <td class="empty"></td>
+            <td class="empty"></td>
+
+        <td>
+            <p class="number">13</p>
+            <p class="symbol">Al</p>
+            <h4 class="name">Aluminium</h4>
+            <p class="molar">26.981539</p>
+        </td>
+        
+        <td>
+            <p class="number">14</p>
+            <p class="symbol">Si</p>
+            <h4 class="name">Silicon</h4>
+            <p class="molar">28.0855</p>
+        </td>
+        
+        <td>
+            <p class="number">15</p>
+            <p class="symbol">P</p>
+            <h4 class="name">Phosphorus</h4>
+            <p class="molar">30.973763</p>
+        </td>
+        
+        <td>
+            <p class="number">16</p>
+            <p class="symbol">S</p>
+            <h4 class="name">Sulfur</h4>
+            <p class="molar">32.065</p>
+        </td>
+        
+        <td>
+            <p class="number">17</p>
+            <p class="symbol">Cl</p>
+            <h4 class="name">Chlorine</h4>
+            <p class="molar">35.453</p>
+        </td>
+        
+        <td>
+            <p class="number">18</p>
+            <p class="symbol">Ar</p>
+            <h4 class="name">Argon</h4>
+            <p class="molar">39.948</p>
+        </td>
+                </tr>
+        <tr>
+
+        <td>
+            <p class="number">19</p>
+            <p class="symbol">K</p>
+            <h4 class="name">Potassium</h4>
+            <p class="molar">39.0983</p>
+        </td>
+        
+        <td>
+            <p class="number">20</p>
+            <p class="symbol">Ca</p>
+            <h4 class="name">Calcium</h4>
+            <p class="molar">40.078</p>
+        </td>
+        
+        <td>
+            <p class="number">21</p>
+            <p class="symbol">Sc</p>
+            <h4 class="name">Scandium</h4>
+            <p class="molar">44.955914</p>
+        </td>
+        
+        <td>
+            <p class="number">22</p>
+            <p class="symbol">Ti</p>
+            <h4 class="name">Titanium</h4>
+            <p class="molar">47.867</p>
+        </td>
+        
+        <td>
+            <p class="number">23</p>
+            <p class="symbol">V</p>
+            <h4 class="name">Vanadium</h4>
+            <p class="molar">50.9415</p>
+        </td>
+        
+        <td>
+            <p class="number">24</p>
+            <p class="symbol">Cr</p>
+            <h4 class="name">Chromium</h4>
+            <p class="molar">51.9961</p>
+        </td>
+        
+        <td>
+            <p class="number">25</p>
+            <p class="symbol">Mn</p>
+            <h4 class="name">Manganese</h4>
+            <p class="molar">54.938046</p>
+        </td>
+        
+        <td>
+            <p class="number">26</p>
+            <p class="symbol">Fe</p>
+            <h4 class="name">Iron</h4>
+            <p class="molar">55.845</p>
+        </td>
+        
+        <td>
+            <p class="number">27</p>
+            <p class="symbol">Co</p>
+            <h4 class="name">Cobalt</h4>
+            <p class="molar">58.933193</p>
+        </td>
+        
+        <td>
+            <p class="number">28</p>
+            <p class="symbol">Ni</p>
+            <h4 class="name">Nickel</h4>
+            <p class="molar">58.6934</p>
+        </td>
+        
+        <td>
+            <p class="number">29</p>
+            <p class="symbol">Cu</p>
+            <h4 class="name">Copper</h4>
+            <p class="molar">63.546</p>
+        </td>
+        
+        <td>
+            <p class="number">30</p>
+            <p class="symbol">Zn</p>
+            <h4 class="name">Zinc</h4>
+            <p class="molar">65.38</p>
+        </td>
+        
+        <td>
+            <p class="number">31</p>
+            <p class="symbol">Ga</p>
+            <h4 class="name">Gallium</h4>
+            <p class="molar">69.723</p>
+        </td>
+        
+        <td>
+            <p class="number">32</p>
+            <p class="symbol">Ge</p>
+            <h4 class="name">Germanium</h4>
+            <p class="molar">72.63</p>
+        </td>
+        
+        <td>
+            <p class="number">33</p>
+            <p class="symbol">As</p>
+            <h4 class="name">Arsenic</h4>
+            <p class="molar">74.9216</p>
+        </td>
+        
+        <td>
+            <p class="number">34</p>
+            <p class="symbol">Se</p>
+            <h4 class="name">Selenium</h4>
+            <p class="molar">78.96</p>
+        </td>
+        
+        <td>
+            <p class="number">35</p>
+            <p class="symbol">Br</p>
+            <h4 class="name">Bromine</h4>
+            <p class="molar">79.904</p>
+        </td>
+        
+        <td>
+            <p class="number">36</p>
+            <p class="symbol">Kr</p>
+            <h4 class="name">Krypton</h4>
+            <p class="molar">83.798</p>
+        </td>
+                </tr>
+        <tr>
+
+        <td>
+            <p class="number">37</p>
+            <p class="symbol">Rb</p>
+            <h4 class="name">Rubidium</h4>
+            <p class="molar">85.4678</p>
+        </td>
+        
+        <td>
+            <p class="number">38</p>
+            <p class="symbol">Sr</p>
+            <h4 class="name">Strontium</h4>
+            <p class="molar">87.62</p>
+        </td>
+        
+        <td>
+            <p class="number">39</p>
+            <p class="symbol">Y</p>
+            <h4 class="name">Yttrium</h4>
+            <p class="molar">88.90585</p>
+        </td>
+        
+        <td>
+            <p class="number">40</p>
+            <p class="symbol">Zr</p>
+            <h4 class="name">Zirconium</h4>
+            <p class="molar">91.224</p>
+        </td>
+        
+        <td>
+            <p class="number">41</p>
+            <p class="symbol">Nb</p>
+            <h4 class="name">Niobium</h4>
+            <p class="molar">92.90638</p>
+        </td>
+        
+        <td>
+            <p class="number">42</p>
+            <p class="symbol">Mo</p>
+            <h4 class="name">Molybdenum</h4>
+            <p class="molar">95.96</p>
+        </td>
+        
+        <td>
+            <p class="number">43</p>
+            <p class="symbol">Tc</p>
+            <h4 class="name">Technetium</h4>
+            <p class="molar">98</p>
+        </td>
+        
+        <td>
+            <p class="number">44</p>
+            <p class="symbol">Ru</p>
+            <h4 class="name">Ruthenium</h4>
+            <p class="molar">101.07</p>
+        </td>
+        
+        <td>
+            <p class="number">45</p>
+            <p class="symbol">Rh</p>
+            <h4 class="name">Rhodium</h4>
+            <p class="molar">102.9055</p>
+        </td>
+        
+        <td>
+            <p class="number">46</p>
+            <p class="symbol">Pd</p>
+            <h4 class="name">Palladium</h4>
+            <p class="molar">106.42</p>
+        </td>
+        
+        <td>
+            <p class="number">47</p>
+            <p class="symbol">Ag</p>
+            <h4 class="name">Silver</h4>
+            <p class="molar">107.8682</p>
+        </td>
+        
+        <td>
+            <p class="number">48</p>
+            <p class="symbol">Cd</p>
+            <h4 class="name">Cadmium</h4>
+            <p class="molar">112.411</p>
+        </td>
+        
+        <td>
+            <p class="number">49</p>
+            <p class="symbol">In</p>
+            <h4 class="name">Indium</h4>
+            <p class="molar">114.818</p>
+        </td>
+        
+        <td>
+            <p class="number">50</p>
+            <p class="symbol">Sn</p>
+            <h4 class="name">Tin</h4>
+            <p class="molar">118.71</p>
+        </td>
+        
+        <td>
+            <p class="number">51</p>
+            <p class="symbol">Sb</p>
+            <h4 class="name">Antimony</h4>
+            <p class="molar">121.76</p>
+        </td>
+        
+        <td>
+            <p class="number">52</p>
+            <p class="symbol">Te</p>
+            <h4 class="name">Tellurium</h4>
+            <p class="molar">127.6</p>
+        </td>
+        
+        <td>
+            <p class="number">53</p>
+            <p class="symbol">I</p>
+            <h4 class="name">Iodine</h4>
+            <p class="molar">126.90447</p>
+        </td>
+        
+        <td>
+            <p class="number">54</p>
+            <p class="symbol">Xe</p>
+            <h4 class="name">Xenon</h4>
+            <p class="molar">131.293</p>
+        </td>
+                </tr>
+        <tr>
+
+        <td>
+            <p class="number">55</p>
+            <p class="symbol">Cs</p>
+            <h4 class="name">Caesium</h4>
+            <p class="molar">132.90546</p>
+        </td>
+        
+        <td>
+            <p class="number">56</p>
+            <p class="symbol">Ba</p>
+            <h4 class="name">Barium</h4>
+            <p class="molar">137.327</p>
+        </td>
+                    <td class="empty"></td>
+
+        <td>
+            <p class="number">72</p>
+            <p class="symbol">Hf</p>
+            <h4 class="name">Hafnium</h4>
+            <p class="molar">178.49</p>
+        </td>
+        
+        <td>
+            <p class="number">73</p>
+            <p class="symbol">Ta</p>
+            <h4 class="name">Tantalum</h4>
+            <p class="molar">180.94788</p>
+        </td>
+        
+        <td>
+            <p class="number">74</p>
+            <p class="symbol">W</p>
+            <h4 class="name">Tungsten</h4>
+            <p class="molar">183.84</p>
+        </td>
+        
+        <td>
+            <p class="number">75</p>
+            <p class="symbol">Re</p>
+            <h4 class="name">Rhenium</h4>
+            <p class="molar">186.207</p>
+        </td>
+        
+        <td>
+            <p class="number">76</p>
+            <p class="symbol">Os</p>
+            <h4 class="name">Osmium</h4>
+            <p class="molar">190.23</p>
+        </td>
+        
+        <td>
+            <p class="number">77</p>
+            <p class="symbol">Ir</p>
+            <h4 class="name">Iridium</h4>
+            <p class="molar">192.217</p>
+        </td>
+        
+        <td>
+            <p class="number">78</p>
+            <p class="symbol">Pt</p>
+            <h4 class="name">Platinum</h4>
+            <p class="molar">195.084</p>
+        </td>
+        
+        <td>
+            <p class="number">79</p>
+            <p class="symbol">Au</p>
+            <h4 class="name">Gold</h4>
+            <p class="molar">196.96657</p>
+        </td>
+        
+        <td>
+            <p class="number">80</p>
+            <p class="symbol">Hg</p>
+            <h4 class="name">Mercury</h4>
+            <p class="molar">200.59</p>
+        </td>
+        
+        <td>
+            <p class="number">81</p>
+            <p class="symbol">Tl</p>
+            <h4 class="name">Thallium</h4>
+            <p class="molar">204.3833</p>
+        </td>
+        
+        <td>
+            <p class="number">82</p>
+            <p class="symbol">Pb</p>
+            <h4 class="name">Lead</h4>
+            <p class="molar">207.2</p>
+        </td>
+        
+        <td>
+            <p class="number">83</p>
+            <p class="symbol">Bi</p>
+            <h4 class="name">Bismuth</h4>
+            <p class="molar">208.9804</p>
+        </td>
+        
+        <td>
+            <p class="number">84</p>
+            <p class="symbol">Po</p>
+            <h4 class="name">Polonium</h4>
+            <p class="molar">209</p>
+        </td>
+        
+        <td>
+            <p class="number">85</p>
+            <p class="symbol">At</p>
+            <h4 class="name">Astatine</h4>
+            <p class="molar">210</p>
+        </td>
+        
+        <td>
+            <p class="number">86</p>
+            <p class="symbol">Rn</p>
+            <h4 class="name">Radon</h4>
+            <p class="molar">222</p>
+        </td>
+                </tr>
+        <tr>
+
+        <td>
+            <p class="number">87</p>
+            <p class="symbol">Fr</p>
+            <h4 class="name">Francium</h4>
+            <p class="molar">223</p>
+        </td>
+        
+        <td>
+            <p class="number">88</p>
+            <p class="symbol">Ra</p>
+            <h4 class="name">Radium</h4>
+            <p class="molar">226</p>
+        </td>
+                    <td class="empty"></td>
+
+        <td>
+            <p class="number">104</p>
+            <p class="symbol">Rf</p>
+            <h4 class="name">Rutherfordium</h4>
+            <p class="molar">267</p>
+        </td>
+        
+        <td>
+            <p class="number">105</p>
+            <p class="symbol">Db</p>
+            <h4 class="name">Dubnium</h4>
+            <p class="molar">268</p>
+        </td>
+        
+        <td>
+            <p class="number">106</p>
+            <p class="symbol">Sg</p>
+            <h4 class="name">Seaborgium</h4>
+            <p class="molar">271</p>
+        </td>
+        
+        <td>
+            <p class="number">107</p>
+            <p class="symbol">Bh</p>
+            <h4 class="name">Bohrium</h4>
+            <p class="molar">272</p>
+        </td>
+        
+        <td>
+            <p class="number">108</p>
+            <p class="symbol">Hs</p>
+            <h4 class="name">Hassium</h4>
+            <p class="molar">270</p>
+        </td>
+        
+        <td>
+            <p class="number">109</p>
+            <p class="symbol">Mt</p>
+            <h4 class="name">Meitnerium</h4>
+            <p class="molar">276</p>
+        </td>
+        
+        <td>
+            <p class="number">110</p>
+            <p class="symbol">Ds</p>
+            <h4 class="name">Darmstadtium</h4>
+            <p class="molar">281</p>
+        </td>
+        
+        <td>
+            <p class="number">111</p>
+            <p class="symbol">Rg</p>
+            <h4 class="name">Roentgenium</h4>
+            <p class="molar">280</p>
+        </td>
+        
+        <td>
+            <p class="number">112</p>
+            <p class="symbol">Cn</p>
+            <h4 class="name">Copernicium</h4>
+            <p class="molar">285</p>
+        </td>
+        
+        <td>
+            <p class="number">113</p>
+            <p class="symbol">Uut</p>
+            <h4 class="name">Ununtrium</h4>
+            <p class="molar">284</p>
+        </td>
+        
+        <td>
+            <p class="number">114</p>
+            <p class="symbol">Fl</p>
+            <h4 class="name">Flerovium</h4>
+            <p class="molar">289</p>
+        </td>
+        
+        <td>
+            <p class="number">115</p>
+            <p class="symbol">Uup</p>
+            <h4 class="name">Ununpentium</h4>
+            <p class="molar">288</p>
+        </td>
+        
+        <td>
+            <p class="number">116</p>
+            <p class="symbol">Lv</p>
+            <h4 class="name">Livermorium</h4>
+            <p class="molar">293</p>
+        </td>
+        
+        <td>
+            <p class="number">117</p>
+            <p class="symbol">Uus</p>
+            <h4 class="name">Ununseptium</h4>
+            <p class="molar">294</p>
+        </td>
+        
+        <td>
+            <p class="number">118</p>
+            <p class="symbol">Uuo</p>
+            <h4 class="name">Ununoctium</h4>
+            <p class="molar">294</p>
+        </td>
+                
+    </tr>
+    </table>
+    </body>
+    </html>
+    
