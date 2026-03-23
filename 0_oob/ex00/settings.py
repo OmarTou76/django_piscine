@@ -1,5 +1,5 @@
-name = "Boutaleb"
-firstname = "Omar"
-age = 24
+name = "Doe"
+firstname = "John"
+age = 20
 profession = "Software Developer"
-title = "Omar's Resume"
+title = "John Doe's Resume"

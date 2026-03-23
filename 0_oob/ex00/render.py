@@ -2,7 +2,8 @@ import sys
 import os
 import re
 
-def render(template_path):
+
+def render(template_path: str) -> None:
     if not template_path.endswith('.template'):
         raise ValueError("Invalid file extension. Expected a .template file.")
         
@@ -12,24 +13,23 @@ def render(template_path):
     if not os.path.isfile(template_path):
         raise IsADirectoryError("Path is not a regular file.")
         
-    if not os.path.exists("settings.py"):
-        raise FileNotFoundError("File 'settings.py' not found.")
-        
-    # Read and parse settings.py using exec to inject into globals
-    with open("settings.py", "r") as f:
-        exec(f.read(), glob
-        
-    # Read the template file
+    import settings
+    variables = {k: v for k, v in vars(settings).items() if not k.startswith('__')}
+
     with open(template_path, "r") as f:
         template_content = f.read()
 
-    # Keyword expansion using format() and globals()
-    # It replaces {var} with the corresponding variable in globals
-    # as hinted by 'help(globals), keyword expansion...'
-    rendered_content = template_content.format(**globals())
+    def replace_match(match):
+        key = match.group(1)
+        if key in variables:
+            return str(variables[key])
+        else:
+            raise KeyError(f"Variable '{key}' not found in settings.")
+
+    rendered_content = re.sub(r"\{(\w+)\}", replace_match, template_content)
     
-    # Write to HTML file
-    output_path = template_path[:-9] + ".html"
+    output_path = template_path.replace(".template", ".html")
+
     with open(output_path, "w") as f:
         f.write(rendered_content)
 
@@ -40,7 +40,6 @@ def main():
         render(sys.argv[1])
     except Exception as e:
         print(f"Error {type(e).__name__}: {e}")
-        # Even on error we must handle gracefully, no traceback printed
         sys.exit(1)
 
 if __name__ == '__main__':
