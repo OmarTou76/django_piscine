@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{title}</title>
+</head>
+<body>
+    <header>
+        <h1>{firstname} {name}</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Personal Information</h2>
+            <p><strong>Age:</strong> {age}</p>
+            <p><strong>Profession:</strong> {profession}</p>
+        </section>
+        <section>
+            <h2>Summary</h2>
+            <p>I am a passionate {profession} with a strong desire to conquer the Silicon Valley!</p>
+        </section>
+    </main>
+</body>
+</html>
